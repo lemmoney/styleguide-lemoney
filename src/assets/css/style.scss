@@ -1,0 +1,422 @@
+@import "_mixins";
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,700,700i&display=swap');
+
+// Global
+$font: "Montserrat", "Helvetica", "Arial", sans-serif;
+
+$alabaster-gray: #FAFAFA;
+$alto-gray: #DEDEDE;
+$gallery-gray: #EAEAEA;
+$gull-gray: #A0AAB8;
+$mine-gary: #313131;
+$spring-green: #18ED8A;
+$spring-green-hover: #17BC66;
+$purple: #9602A6;
+$purple-hover: #5D0067;
+$radical-red: #FC235C;
+$radical-red-hover: #B71A44;
+$yellow-bright-sun: #FFD53F;
+$oxford-blue: #354052;
+$white: #FFF;
+$black: #000;
+
+
+// Reset
+
+%reset {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	@extend %reset;
+	font-size: 14px;
+	background: $white;
+	color: $oxford-blue;
+	font-family: $font;
+	font-weight: 400;
+	line-height: 1.612;
+}
+
+body {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	position: relative;
+}
+
+// Text structure
+strong,
+b {
+	font-weight: 700;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-weight: 700;
+	color: $oxford-blue;
+}
+
+h1 {
+	font-size: 42px;
+}
+
+h2 {
+	font-size: 32px;
+}
+
+h3 {
+	font-size: 26px;
+}
+
+h4 {
+	font-size: 18px;
+}
+
+p {
+	font-size: 14px;
+}
+
+a {
+	color: $spring-green-hover;
+	transition: all .15s ease-out;
+
+	&:hover {
+		color: $spring-green;
+	}
+}
+
+.title {
+	color: $spring-green;
+}
+
+.link__icon {
+	color: $oxford-blue;
+	text-decoration: none;
+	transition: all .15s ease-out;
+
+	i {
+		padding-right: 6px;
+	}
+
+	&:hover {
+		color: $spring-green-hover;
+	}
+}
+
+.font {
+
+	&--light {
+		font-weight: 300;
+	}
+
+	&--normal {
+		font-weight: 400;
+	}
+
+	&--bold {
+		font-weight: 700;
+	}
+
+	&--exemple {
+		font-size: 42px;
+	}
+
+	&--no-margin {
+		margin: 0;
+	}
+}
+
+.title--typo {
+	border-right: 1px solid $gallery-gray;
+	align-items: stretch;
+}
+// Layout structure
+.header {
+	position: fixed;
+	width: 100%;
+	z-index: 2;
+	padding: 0 30px;
+	background-color: $white;
+	border-bottom: 1px solid $gallery-gray;
+	display: flex;
+	justify-content: space-between;
+
+	.mobile-logo {
+		margin: 10px 0 6px;
+		opacity: 1;
+		height: 20px;
+		@include breakpoint("md") {
+			opacity: 0;
+		}
+	}
+
+	p {
+		margin: 10px 0;
+		font-size: 12px;
+	}
+}
+
+section {
+	margin: auto;
+	border-bottom: 1px solid $gallery-gray;
+	width: 90%;
+	padding: 75px 0;
+}
+
+// Sidebar Menu
+.sidebar {
+	background-color: $white;
+	border-right: 1px solid $gallery-gray;
+	height: 100vh;
+	left: 0;
+	padding: 0;
+	position: fixed;
+	top: 0;
+	transform: translate(-100%, 0);
+	transition: all .15s ease-out;
+	width: 70%;
+	z-index: 1;
+
+	@include breakpoint("md") {
+		transform: translate(0, 0);
+		width: 100%;
+	}
+
+	.logo {
+		padding: 30px;
+		width: 100%;
+		max-width: 200px;
+	}
+}
+
+.menu ul {
+	padding: 0;
+
+	li {
+		list-style-type: none;
+		padding-left: 27px;
+		margin: 25px 0px;
+		transition: all .15s ease-out;
+		border-left: 3px solid $white;
+
+		a {
+			font-weight: 600;
+			text-decoration: none;
+			color: $gull-gray;
+
+			&:hover {
+				color: $spring-green;
+			}
+		}
+
+		&.active {
+			border-left: 3px solid $spring-green;
+
+			a {
+				color: $spring-green;
+			}
+		}
+	}
+}
+
+// Buttons
+.button {
+	background-color: $alabaster-gray;
+	border-radius: 3px;
+	border: 0px;
+	border: 1px solid $gallery-gray;
+	color: $oxford-blue;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 700;
+	margin: 12px 0;
+	padding: 12px;
+	text-align: center;
+	text-decoration: none;
+	transition: all .15s ease;
+	width: 100%;
+
+	&:hover {
+		background-color: $gallery-gray;
+	}
+
+	&--icon {
+		border: 1px solid $gallery-gray;
+		font-size: 12px;
+		text-align: left;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		display: flex;
+		align-items: center;
+		padding: 15px 20px;
+		color: $oxford-blue;
+
+		i {
+			color: $spring-green;
+			padding-right: 15px;
+			transition: all .15s ease-out;
+		}
+
+		&:hover {
+			background-color: $spring-green;
+			border: 1px solid $spring-green;
+			color: $white;
+
+			i {
+				color: $white;
+			}
+		}
+	}
+
+	&--big {
+		font-size: 20px;
+		padding: 17px;
+	}
+
+	&--small {
+		font-size: 14px;
+		padding: 8px;
+	}
+
+	&--green {
+		border: 1px solid $spring-green;
+		background-color: $spring-green;
+		color: $white;
+
+		&:hover {
+			border-color: $spring-green-hover;
+			background-color: $spring-green-hover;
+		}
+	}
+
+	&--purple {
+		border: 1px solid $purple;
+		background-color: $purple;
+		color: $white;
+
+		&:hover {
+			border-color: $purple-hover;
+			background-color: $purple-hover;
+		}
+	}
+
+	&--red {
+		border: 1px solid $radical-red;
+		background-color: $radical-red;
+		color: $white;
+
+		&:hover {
+			border-color: $radical-red-hover;
+			background-color: $radical-red-hover;
+		}
+	}
+}
+
+
+// Color card
+.color__card {
+
+	.color__display {
+		height: 90px;
+		display: block;
+		width: 90px;
+		content: "";
+		border-radius: 90px;
+		margin: 0 auto;
+
+		&--yellow-bright-sun {
+			background-color: $yellow-bright-sun;
+		}
+
+		&--spring-green {
+			background-color: $spring-green;
+		}
+	}
+
+	.color__subtitle {
+		text-align: center;
+		p {
+			margin: 10px 0;
+		}
+	}
+}
+
+.card__box {
+	border: 1px solid $alto-gray;
+	border-radius: 3px;
+	padding: 16px 24px;
+}
+
+// Form elements
+
+.form {
+	&__input {
+		border-radius: 3px;
+		background-color: #F8FAFC;
+		border: 1px solid $alto-gray;
+		box-shadow: none;
+		padding: 6px 12px;
+		font-size: 14px;
+		font: inherit;
+		width: 100%;
+
+		&--disabled {
+			background-color: $alto-gray;
+		}
+	}
+
+	&__select {
+	}
+
+	&__radio--container {
+		padding: 15px 0;
+	}
+
+	&__checkbox--container {
+		padding: 15px 0;
+	}
+
+	&__label {
+		width: 100%;
+		display: inline-block;
+		margin: 10px 0 5px;
+	}
+}
+
+
+// Code elements
+$code-gray: #F4F4F4;
+
+pre {
+	background: $code-gray;
+	padding: 20px;
+	border-radius: 3px;
+  display: block;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+code {
+}
+
+.code {
+	&__box {
+		position: relative;
+	}
+
+	&__title {
+		position: absolute;
+		right: 0;
+		top: 0;
+		background-color: $oxford-blue;
+		color: $white;
+		padding: 0 4px;
+		border-radius: 3px;
+		font-size: 12px;
+	}
+}

@@ -1,0 +1,516 @@
+doctype html
+html(lang='en')
+	head
+		title Lemoney Styleguide
+		meta(charset='utf-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no')
+		meta(name='description', content='Lemoney Styleguide')
+		meta(name='author', content='Raphael Krieger (Designer)')
+
+		// Styles
+		script(src="https://kit.fontawesome.com/2554de5a31.js")
+		link(rel='stylesheet', href='assets/css/bootstrap/bootstrap-grid.css')
+		link(rel='stylesheet', href='assets/css/style.css')
+
+
+	body.container-fluid
+		.row
+			header.header.col-xs-12.col-md-10.offset-md-2
+					img.mobile-logo(src="assets/img/lemoney_logo.svg", alt="Lemoney")
+					p Styleguide v0.5
+		.row
+			sidebar.sidebar.col-xs-12.col-md-2
+				img.logo(src="assets/img/lemoney_logo.svg", alt="Lemoney")
+				nav#menu.menu
+					ul
+						li.active
+							a(href="#introduction") Introduction
+						li
+							a(href="#logo") Logo
+						li
+							a(href="#colors") Colors
+						li
+							a(href="#typography") Typography
+						li
+							a(href="#grid") Grid
+						li
+							a(href="#buttons") Buttons
+						li
+							a(href="#forms") Forms
+			.col-xs-12.col-md-10.offset-md-2
+				section#introduction
+					h3.title Introduction
+					div
+						p Welcome to Lemoney Style Guide. Find the assets you need and download files.
+				section#logo
+					h3.title Logo
+					div
+						p Welcome to Lemoney Style Guide. Find the assets you need and download files.
+						.row
+							.col-md-6
+								img.logo(src="assets/img/lemoney_logo.svg", alt="Lemoney")
+						.row
+							.col-md-3
+								a.button.button--icon(href="assets/img/lemoney_logo_svg.zip", target="_blank")
+									i.fas.fa-file.fa-3x
+									| lemoney_logo.svg
+									br
+									| 5 KB
+							.col-md-3
+								a.button.button--icon(href="assets/img/lemoney_logo_eps.zip", target="_blank")
+									i.fas.fa-file.fa-3x
+									| lemoney_logo.eps
+									br
+									| 35 KB
+							.col-md-3
+								a.button.button--icon(href="assets/img/lemoney_logo_png.zip", target="_blank")
+									i.fas.fa-file-image.fa-3x
+									| lemoney_logo.png
+									br
+									| 37 KB
+
+				section#colors
+					h3.title Colors
+					div
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta facere fugiat assumenda dolorem, in sapiente quo fugit laborum quod natus officia. Aliquam necessitatibus commodi ad, voluptate molestias assumenda dolor quis.
+						h4.title Primiry Colors
+						.row
+							.col-md-2.color__card
+								.color__display.color__display--spring-green
+								.color__subtitle
+									p Spring Green
+									p #18ED8A
+									p RGB (24,237,138)
+							.col-md-2.color__card
+								.color__display.color__display--yellow-bright-sun
+								.color__subtitle
+									p Yellow Bright Sun
+									p #FFD53F
+									p RGB (255,213,63)
+						h4.title Secondary Colors
+
+				section#typography
+					h3.title Typography
+					div
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium ullam, dolores cupiditate vero temporibus sit quae minima fuga, quod ducimus natus dolorem, officia animi inventore asperiores. Soluta voluptatibus, quia deleniti.
+						.row
+							.col-md-3
+								a.button.button--icon(href="assets/fonts/montserrat.zip", target="_blank")
+									i.fas.fa-file-archive.fa-3x
+									| Download montserrat.zip
+									br
+									| 2 MB
+						.row
+							.col-10
+								.code__box
+									pre
+										code(class="language-html", data-language="html")
+											- var button_string_html = '<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,700,700i&display=swap" rel="stylesheet">';
+											| #{button_string_html}
+									.code__title html
+								p
+									b OU
+								.code__box
+									pre
+										code(class="language-css", data-language="css")
+											| @import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,700,700i&display=swap');
+									.code__title css
+								.code__box
+									pre
+										code(class="language-css", data-language="css")
+											| font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+											| line-height: 1.612;
+									.code__title css
+						.row.align-items-center
+							.col-md-2
+								h4 Montserrat
+							.col-md-10
+								p.font--exemple Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz 1 2 3 4 5 6 7 8 9 0
+						.row.align-items-baseline
+							.col-md-2
+								h4 Family
+							.col-md-10
+								p.font--exemple.font--no-margin.font--light
+									| Light (300)
+								p.font--exemple.font--no-margin.font--light
+									i Light Italic (300)
+								p.font--exemple.font--no-margin
+									| Regular (400)
+								p.font--exemple.font--no-margin
+									i Regular Italic (400)
+								p.font--exemple.font--no-margin
+									b Bold (700)
+								p.font--exemple.font--no-margin
+									b
+										i Bold Italic (700)
+						.row.align-items-center
+							.col-md-2
+								h4 Montserrat Bold - 42px
+							.col-md-10
+								h1 h1 - How Lemoney Works?
+						.row.align-items-center
+							.col-md-2
+								h4 Montserrat Bold - 32px
+							.col-md-10
+								h2 h2 - How Lemoney Works?
+						.row.align-items-center
+							.col-md-2
+								h4 Montserrat Bold - 26px
+							.col-md-10
+								h3 h3 - How Lemoney Works?
+						.row.align-items-center
+							.col-md-2
+								h4 Montserrat Bold - 18px
+							.col-md-10
+								h4 h4 - How Lemoney Works?
+						.row.align-items-center
+							.col-md-2
+								h4 Montserrat Regular - 14px
+							.col-md-10
+								p Paragraf
+								p The quick brown fox jumps over the lazy dog.
+								p Lorem ipsum dolor sit amet,
+									b consectetur adipisicing elit.
+									| Incidunt, quasi quidem voluptas nam ad corporis inventore vel at numquam facere, unde aperiam. Optio officia quidem suscipit.
+									i Saepe ad aut laborum!
+
+						.row.align-items-baseline
+							.col-md-2
+								h4 Links
+							.col-md-4
+								p
+									a(href="#") Text link
+								.code__box
+									pre
+										code(class="language-html", data-language="html")
+											- var button_string_html = '<a href="#">Text link</a>';
+											| #{button_string_html}
+									.code__title html
+								.code__box
+									pre
+										code(class="language-css", data-language="css")
+											| a {
+											|   color: #17BC66;
+											|   -webkit-transition: all .15s ease-out;
+											|   transition: all .15s ease-out;
+											| }
+											| a:hover {
+											|   color: #18ED8A;
+											| }
+									.code__title css
+							.col-md-4
+								p
+									a.link__icon(href="#")
+										i.fas.fa-camera.fa-lg
+										|  Camera
+								.code__box
+									pre
+										code(class="language-html", data-language="html")
+											- var button_string_html = '<a class="link__icon" href="#"><i class="fas fa-camera fa-lg"></i> Camera</a>';
+											| #{button_string_html}
+									.code__title html
+								.code__box
+									pre
+										code(class="language-css", data-language="css")
+											| .icon-link {
+											|  color: #354052;
+											|  text-decoration: none;
+											|  -webkit-transition: all .15s ease-out;
+											|  transition: all .15s ease-out;
+											|}
+											|.icon-link i {
+											|  padding-right: 6px;
+											|}
+											|.icon-link:hover {
+											|  color: #17BC66;
+											|}
+									.code__title css
+
+				section#grid
+					h3.title Grid
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum quisquam, assumenda quidem voluptatum, sequi nisi eaque maiores voluptatem dolores rem, recusandae architecto, odio eos quam illo quibusdam! Eligendi, facilis, hic?
+					p sm: 540px,
+					p md: 720px,
+					p lg: 960px,
+					p xl: 1170px
+					p gutter: 22px
+
+				section#buttons
+					h3.title Buttons
+					div
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium ullam, dolores cupiditate vero temporibus sit quae minima fuga, quod ducimus natus dolorem, officia animi inventore asperiores. Soluta voluptatibus, quia deleniti.
+						.row
+							.col-12
+								h3 Default Button
+							.col-md-2
+								button.button Button
+							.offset-md-2
+							.col-md-6
+								.code__box
+									pre
+										code(class="language-html", data-language="html")
+											- var button_string_html = '<button class="button">button</button>';
+											| #{button_string_html}
+									.code__title html
+								.code__box
+									pre
+										code(class="language-css", data-language="css")
+											| .button {
+											| 	background-color: #FAFAFA;
+											| 	border-radius: 3px;
+											| 	border: 0px;
+											| 	border: 1px solid #EAEAEA;
+											| 	color: #354052;
+											| 	cursor: pointer;
+											| 	font-size: 16px;
+											| 	font-weight: 700;
+											| 	margin: 12px 0;
+											| 	padding: 12px;
+											| 	text-align: center;
+											| 	text-decoration: none;
+											| 	transition: all .15s linear;
+											| 	width: 100%;
+											| }
+											|
+											| .button:hover {
+											| 	background-color: #EAEAEA;
+											| }
+									.code__title css
+						.row
+							.col-md-12
+								h3 Button Size
+						.row
+							.col-12
+								h4 Small Button
+							.col-md-2
+								button.button.button--small Button
+							.offset-md-2
+							.col-md-6
+								.code__box
+									pre
+										code(class="language-html", data-language="html")
+											- var button_string_html = '<button class="button button--small">button</button>';
+											| #{button_string_html}
+									.code__title html
+								.code__box
+									pre
+										code(class="language-css", data-language="css")
+											| .button--small {
+											| 	font-size: 14px;
+											| 	padding: 8px;
+											| }
+									.code__title css
+						.row
+							.col-12
+								h4 Big Button
+							.col-md-2
+								button.button.button--big Button
+							.offset-md-2
+							.col-md-6
+								.code__box
+									pre
+										code(class="language-html", data-language="html")
+											- var button_string_html = '<button class="button button--big">button</button>';
+											| #{button_string_html}
+									.code__title html
+								.code__box
+									pre
+										code(class="language-css", data-language="css")
+										| .button--small {
+										| 	font-size: 20px;
+										| 	padding: 17px;
+										| }
+									.code__title css
+
+						.row
+							.col-md-12
+								h3 Buttons colors
+						.row
+							.col-12
+								h4 Green Button
+							.col-md-2
+								button.button.button--green Button
+							.offset-md-2
+							.col-md-6
+								.code__box
+									pre
+										code(class="language-html", data-language="html")
+											- var button_string_html = '<button class="button button--green">button</button>';
+											| #{button_string_html}
+									.code__title html
+								.code__box
+									pre
+										code(class="language-css", data-language="css")
+										| .button--green {
+										| 	border: 1px solid #18ED8A;
+										| 	background-color: #18ED8A;
+										| 	color: #FFF
+										| }
+										|
+										| .button--green:hover {
+										| 	border-color: #17BC66;
+										| 	background-color: #17BC66;
+										| }
+									.code__title css
+						.row
+							.col-12
+								h4 Purple Button
+							.col-md-2
+								button.button.button--purple Button
+							.offset-md-2
+							.col-md-6
+								.code__box
+									pre
+										code(class="language-html", data-language="html")
+											- var button_string_html = '<button class="button button--purple">button</button>';
+											| #{button_string_html}
+									.code__title html
+								.code__box
+									pre
+										code(class="language-css", data-language="css")
+										| .button--purple {
+										| 	border: 1px solid #9602A6;
+										| 	background-color: #9602A6;
+										| 	color: #FFF
+										| }
+										|
+										| .button--purple:hover {
+										| 	border-color: #5D0067;
+										| 	background-color: #5D0067;
+										| }
+									.code__title css
+						.row
+							.col-12
+								h4 Red Button
+							.col-md-2
+								button.button.button--red Button
+							.offset-md-2
+							.col-md-6
+								.code__box
+									pre
+										code(class="language-html", data-language="html")
+											- var button_string_html = '<button class="button button--red">button</button>';
+											| #{button_string_html}
+									.code__title html
+								.code__box
+									pre
+										code(class="language-css", data-language="css")
+										| .button--red {
+										| 	border: 1px solid #FC235C;
+										| 	background-color: #FC235C;
+										| 	color: #FFF
+										| }
+										|
+										| .button--red:hover {
+										| 	border-color: #B71A44;
+										| 	background-color: #B71A44;
+										| }
+									.code__title css
+						.row
+							.col-12
+								h4 Plain Button
+							.col-md-2
+								button.button Button
+							.offset-md-2
+							.col-md-6
+								.code__box
+									pre
+										code(class="language-html", data-language="html")
+											- var button_string_html = '<button class="button">button</button>';
+											| #{button_string_html}
+									.code__title html
+								.code__box
+									pre
+										code(class="language-css", data-language="css")
+											| .button {
+											| 	background-color: #FAFAFA;
+											| 	border-radius: 3px;
+											| 	border: 0px;
+											| 	border: 1px solid #EAEAEA;
+											| 	color: #354052;
+											| 	cursor: pointer;
+											| 	font-size: 16px;
+											| 	font-weight: 700;
+											| 	margin: 12px 0;
+											| 	padding: 12px;
+											| 	text-align: center;
+											| 	text-decoration: none;
+											| 	transition: all .15s linear;
+											| 	width: 100%;
+											| }
+											|
+											| .button:hover {
+											| 	background-color: #EAEAEA;
+											| }
+									.code__title css
+
+				section#forms
+					h3.title Forms
+					.row
+						.col-md-10.card__box
+							form.form(action="")
+								fildset
+									.row
+										.col-sm-6
+											label.form__label Label
+											input.form__input(type="text", placeholder="Placeholder")
+										.col-sm-6
+											label.form__label Disabled
+											input.form__input.form__input--disabled(type="text", value="Disabled", disabled)
+									.row
+										.col-sm-6
+											label.form__label(for="Email input") Email input
+											input.form__input(type="email")
+										.col-sm-6
+											label.form__label(for="Password input") Password input
+											input.form__input(type="password", value="password")
+									.row
+										.col-sm-6
+											label.form__label(for="textarea") Textarea label
+											textarea.form__input(name="", cols="30", rows="5")
+										.col-sm-6
+											label.form__label File input
+											input.form__input(type="file")
+									.row
+										.col-sm-6
+											label.form__label Select field
+											select.form__input.form__select
+												option option 01
+												option option 02
+												option option 03
+												option option 04
+										.col-sm-6
+											label.form__label Number input
+											input.form__input(type="number", valeu="5", min="0", max="10")
+									.row
+										.col-sm-6
+											label.form__label Date input
+											input.form__input(type="date")
+										.col-sm-6
+											label.form__label Time input
+											input.form__input(type="time")
+									.row
+										.col-sm-6
+											.form__radio--container
+												label(for='radio1')
+													input(type="radio", name="rad", valeu="radio1", checked="checked")
+													| Radio 1
+												label(for='radio2')
+													input(type="radio", name="rad", valeu="radio2")
+													| Radio 2
+												label(for='radio3')
+													input(type="radio", name="rad", valeu="radio3")
+													| Radio 3
+										.col-sm-6
+											.form__checkbox--container
+												label(for="check1")
+													input(type="checkbox", name="check", valeu="check1")
+													| Checkbox input 1
+												label(for="check2")
+													input(type="checkbox", name="check", valeu="check2")
+													| Checkbox input 2
+
+		script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js')
+		script(src='assets/scripts/scrollspy-min.js')
+		script(src='assets/scripts/script-min.js')
