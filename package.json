@@ -1,0 +1,21 @@
+{
+  "name": "styleguide-lemoney",
+  "version": "1.0.0",
+  "main": "src/index.pug",
+  "repository": "git@github.com:lemmoney/styleguide-lemoney.git",
+  "author": "Lemoney Team <dev@lemoney.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel src/index.pug src/content.pug",
+    "build": "parcel build src/index.pug src/content.pug",
+    "server": "serve dist"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.3",
+    "pug": "^2.0.4",
+    "sass": "^1.22.9"
+  },
+  "dependencies": {
+    "serve": "^11.1.0"
+  }
+}
