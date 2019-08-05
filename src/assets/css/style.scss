@@ -11,7 +11,7 @@ $gull-gray: #A0AAB8;
 $mine-gary: #313131;
 $spring-green: #18ED8A;
 $spring-green-hover: #17BC66;
-$purple: #9602A6;
+$purple: #9600A6;
 $purple-hover: #5D0067;
 $radical-red: #FC235C;
 $radical-red-hover: #B71A44;
@@ -189,8 +189,16 @@ section {
 
 	.logo {
 		padding: 30px;
+	}
+}
+
+.logo {
+	width: 100%;
+	max-width: 200px;
+
+	&_symbol {
 		width: 100%;
-		max-width: 200px;
+		max-width: 50px;
 	}
 }
 
@@ -336,6 +344,14 @@ section {
 		&--spring-green {
 			background-color: $spring-green;
 		}
+
+		&--purple {
+			background-color: $purple;
+		}
+
+		&--radical-red {
+			background-color: $radical-red;
+		}
 	}
 
 	.color__subtitle {
@@ -353,11 +369,14 @@ section {
 }
 
 // Form elements
+#forms {
+	padding-bottom: 250px;
+}
 
 .form {
 	&__input {
 		border-radius: 3px;
-		background-color: #F8FAFC;
+		background-color: $alabaster-gray;
 		border: 1px solid $alto-gray;
 		box-shadow: none;
 		padding: 6px 12px;
@@ -420,3 +439,5 @@ code {
 		font-size: 12px;
 	}
 }
+
+
