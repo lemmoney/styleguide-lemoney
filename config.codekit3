@@ -23,6 +23,33 @@
 		"oAP": "/dist/dist",
 		"oF": 0
 		},
+	"/package.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/dist/package-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/README.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/dist/README.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
 	"/src/assets/css/_mixins.scss": {
 		"aP": 1,
 		"bl": 1,
@@ -374,13 +401,66 @@
 		"oAP": "/dist/assets/img/lemoney_logo_svg.zip",
 		"oF": 0
 		},
+	"/src/assets/img/lemoney_symbol.eps": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/dist/assets/img/lemoney_symbol.eps",
+		"oF": 0
+		},
+	"/src/assets/img/lemoney_symbol.png": {
+		"ft": 32768,
+		"iS": 74493,
+		"oA": 2,
+		"oAP": "/dist/assets/img/lemoney_symbol.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/lemoney_symbol.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/dist/assets/img/lemoney_symbol.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 2202781343711,
+		"prP": 0
+		},
+	"/src/assets/img/lemoney_symbol_eps.zip": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/dist/assets/img/lemoney_symbol_eps.zip",
+		"oF": 0
+		},
+	"/src/assets/img/lemoney_symbol_png.zip": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/dist/assets/img/lemoney_symbol_png.zip",
+		"oF": 0
+		},
+	"/src/assets/img/lemoney_symbol_svg.zip": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/dist/assets/img/lemoney_symbol_svg.zip",
+		"oF": 0
+		},
 	"/src/assets/scripts/script.js": {
 		"bF": 0,
 		"ft": 64,
 		"ma": 0,
 		"mi": 0,
 		"oA": 0,
-		"oAP": "/dist/assets/scripts/script-min.js",
+		"oAP": "/dist/assets/scripts/script.js",
 		"oF": 0,
 		"sC": 2,
 		"tS": 1
@@ -391,7 +471,7 @@
 		"ma": 0,
 		"mi": 0,
 		"oA": 0,
-		"oAP": "/dist/assets/scripts/scrollspy-min.js",
+		"oAP": "/dist/assets/scripts/scrollspy.js",
 		"oF": 0,
 		"sC": 0,
 		"tS": 1
@@ -403,16 +483,6 @@
 		"oA": 0,
 		"oAP": "/src/config.rb",
 		"oF": 0
-		},
-	"/src/content.pug": {
-		"cB": 0,
-		"cOD": 1,
-		"ft": 512,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/dist/content.html",
-		"oF": 0,
-		"oS": 0
 		},
 	"/src/index.pug": {
 		"cB": 1,
@@ -435,7 +505,7 @@
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-ron",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 585866418.21739602
+	"lastBuiltDate": 586707498.27987194
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -2313,7 +2383,7 @@
 		},
 	"languageDefaultsJS": {
 		"autoOutputAction": 0,
-		"autoOutputPathFilenamePattern": "*-min.js",
+		"autoOutputPathFilenamePattern": "*.js",
 		"autoOutputPathRelativePath": "/min",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
@@ -2413,7 +2483,7 @@
 		"autoOutputPathStyle": 2,
 		"compileDebug": 1,
 		"outputStyle": 0,
-		"shouldRunCacheBuster": 0,
+		"shouldRunCacheBuster": 1,
 		"shouldRunHTMLMinifier": 0
 		},
 	"languageDefaultsSASS": {
