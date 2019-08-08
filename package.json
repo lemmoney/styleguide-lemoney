@@ -6,8 +6,8 @@
   "author": "Lemoney Team <dev@lemoney.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "parcel src/index.pug src/content.pug",
-    "build": "parcel build src/index.pug src/content.pug",
+    "dev": "parcel src/index.pug",
+    "build": "parcel build src/index.pug",
     "server": "serve dist"
   },
   "devDependencies": {
