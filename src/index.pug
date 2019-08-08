@@ -54,21 +54,21 @@ html(lang='en')
 							.col-md-3
 								a.button.button--icon(href="assets/img/lemoney_logo_svg.zip", target="_blank")
 									i.fas.fa-file.fa-3x
-									| lemoney_logo.svg
-									br
-									| 5 KB
+									.button__text
+										span.file__title lemoney_logo.svg
+										span.file__size 5 KB
 							.col-md-3
 								a.button.button--icon(href="assets/img/lemoney_logo_eps.zip", target="_blank")
 									i.fas.fa-file.fa-3x
-									| lemoney_logo.eps
-									br
-									| 35 KB
+									.button__text
+										span.file__title lemoney_logo.eps
+										span.file__size 35 KB
 							.col-md-3
 								a.button.button--icon(href="assets/img/lemoney_logo_png.zip", target="_blank")
 									i.fas.fa-file-image.fa-3x
-									| lemoney_logo.png
-									br
-									| 37 KB
+									.button__text
+										span.file__title lemoney_logo.png
+										span.file__size 37 KB
 						.row
 							.col-md-6
 								h4 Symbol
@@ -77,30 +77,30 @@ html(lang='en')
 							.col-md-3
 								a.button.button--icon(href="assets/img/lemoney_symbol_svg.zip", target="_blank")
 									i.fas.fa-file.fa-3x
-									| lemoney_symbol.svg
-									br
-									| 2 KB
+									.button__text
+										span.file__title lemoney_symbol.svg
+										span.file__size 2 KB
 							.col-md-3
 								a.button.button--icon(href="assets/img/lemoney_symbol_eps.zip", target="_blank")
 									i.fas.fa-file.fa-3x
-									| lemoney_symbol.eps
-									br
-									| 8 KB
+									.button__text
+										span.file__title lemoney_symbol.eps
+										span.file__size 8 KB
 							.col-md-3
 								a.button.button--icon(href="assets/img/lemoney_symbol_png.zip", target="_blank")
 									i.fas.fa-file-image.fa-3x
-									| lemoney_symbol.png
-									br
-									| 66 KB
+									.button__text
+										span.file__title lemoney_symbol.png
+										span.file__size 66 KB
 				section#colors
 					h3.title Colors
 					p Our colors are chosen through the logo and our Turbo Cashback product.
 					h4 Primiry Colors
 					.row
 						.col-md-2.color__card
-							.color__display.color__display--spring-green
+							.color__display.color__display--green-spring
 							.color__subtitle
-								p Spring Green
+								p Green Spring
 								p #18ED8A
 								p RGB (24,237,138)
 						.col-md-2.color__card
@@ -116,12 +116,33 @@ html(lang='en')
 								p #9600A6
 								p RGB (150,0,166)
 						.col-md-2.color__card
-							.color__display.color__display--radical-red
+							.color__display.color__display--red-radical
 							.color__subtitle
-								p Radical Red
+								p Red Radical
 								p #FC235C
 								p RGB (252,35,92)
 					h4 Secondary Colors
+					.row
+						.col-md-2.color__card
+							.color__display.color__display--green-jade
+							.color__subtitle
+								p Green Jade
+								p #00B95C
+								p RGB (0,185,92)
+						.col-md-2.color__card
+							.color__display.color__display--purple-indigo
+							.color__subtitle
+								p Purple Indigo
+								p #630076
+								p RGB (99,0,118)
+						.col-md-2.color__card
+							.color__display.color__display--red-monza
+							.color__subtitle
+								p Red Monza
+								p #C20033
+								p RGB (194,0,51)
+					p Colors&nbsp;
+						a(href="https://material.io/resources/color/#!/?view.left=0&view.right=0", target="_blank") material.io
 
 				section#typography
 					h3.title Typography
@@ -130,9 +151,9 @@ html(lang='en')
 						.col-md-3
 							a.button.button--icon(href="assets/fonts/montserrat.zip", target="_blank")
 								i.fas.fa-file-archive.fa-3x
-								| Download montserrat.zip
-								br
-								| 2 MB
+								.button__text
+									span.file__title Download montserrat.zip
+									span.file__size 2 MB
 					.row
 						.col-10
 							.code__box
@@ -380,8 +401,8 @@ html(lang='en')
 									| }
 									|
 									| .button--green:hover {
-									| 	border-color: #17BC66;
-									| 	background-color: #17BC66;
+									| 	border-color: #00b95c;
+									| 	background-color: #00b95c;
 									| }
 								.code__title css
 					.row
@@ -407,8 +428,8 @@ html(lang='en')
 									| }
 									|
 									| .button--purple:hover {
-									| 	border-color: #5D0067;
-									| 	background-color: #5D0067;
+									| 	border-color: #630076;
+									| 	background-color: #630076;
 									| }
 								.code__title css
 					.row
@@ -434,8 +455,8 @@ html(lang='en')
 									| }
 									|
 									| .button--red:hover {
-									| 	border-color: #B71A44;
-									| 	background-color: #B71A44;
+									| 	border-color: #c20033;
+									| 	background-color: #c20033;
 									| }
 								.code__title css
 					.row

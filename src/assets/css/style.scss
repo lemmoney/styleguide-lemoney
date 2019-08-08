@@ -4,19 +4,26 @@
 // Global
 $font: "Montserrat", "Helvetica", "Arial", sans-serif;
 
-$alabaster-gray: #FAFAFA;
-$alto-gray: #DEDEDE;
-$gallery-gray: #EAEAEA;
-$gull-gray: #A0AAB8;
-$mine-gary: #313131;
-$spring-green: #18ED8A;
-$spring-green-hover: #17BC66;
+// gray
+$gray-alabaster: #FAFAFA;
+$gray-alto: #DEDEDE;
+$gray-gallery: #EAEAEA;
+$gray-gull: #A0AAB8;
+$gray-mine: #313131;
+// green
+$green-spring: #18ED8A;
+$green-jade: #00b95c;
+// purple
 $purple: #9600A6;
-$purple-hover: #5D0067;
-$radical-red: #FC235C;
-$radical-red-hover: #B71A44;
+$purple-indigo: #630076;
+// red
+$red-radical: #FC235C;
+$red-monza: #c20033;
+// yellow
 $yellow-bright-sun: #FFD53F;
-$oxford-blue: #354052;
+// blue
+$blue-oxford: #354052;
+
 $white: #FFF;
 $black: #000;
 
@@ -34,7 +41,7 @@ body {
 	@extend %reset;
 	font-size: 14px;
 	background: $white;
-	color: $oxford-blue;
+	color: $blue-oxford;
 	font-family: $font;
 	font-weight: 400;
 	line-height: 1.612;
@@ -58,7 +65,7 @@ h2,
 h3,
 h4 {
 	font-weight: 700;
-	color: $oxford-blue;
+	color: $blue-oxford;
 }
 
 h1 {
@@ -82,20 +89,20 @@ p {
 }
 
 a {
-	color: $spring-green-hover;
+	color: $green-jade;
 	transition: all .15s ease-out;
 
 	&:hover {
-		color: $spring-green;
+		color: $green-spring;
 	}
 }
 
 .title {
-	color: $spring-green;
+	color: $green-spring;
 }
 
 .link__icon {
-	color: $oxford-blue;
+	color: $blue-oxford;
 	text-decoration: none;
 	transition: all .15s ease-out;
 
@@ -104,7 +111,7 @@ a {
 	}
 
 	&:hover {
-		color: $spring-green-hover;
+		color: $green-jade;
 	}
 }
 
@@ -132,7 +139,7 @@ a {
 }
 
 .title--typo {
-	border-right: 1px solid $gallery-gray;
+	border-right: 1px solid $gray-gallery;
 	align-items: stretch;
 }
 // Layout structure
@@ -142,7 +149,7 @@ a {
 	z-index: 2;
 	padding: 0 30px;
 	background-color: $white;
-	border-bottom: 1px solid $gallery-gray;
+	border-bottom: 1px solid $gray-gallery;
 	display: flex;
 	justify-content: space-between;
 
@@ -163,7 +170,7 @@ a {
 
 section {
 	margin: auto;
-	border-bottom: 1px solid $gallery-gray;
+	border-bottom: 1px solid $gray-gallery;
 	width: 90%;
 	padding: 75px 0;
 }
@@ -171,7 +178,7 @@ section {
 // Sidebar Menu
 .sidebar {
 	background-color: $white;
-	border-right: 1px solid $gallery-gray;
+	border-right: 1px solid $gray-gallery;
 	height: 100vh;
 	left: 0;
 	padding: 0;
@@ -215,18 +222,18 @@ section {
 		a {
 			font-weight: 600;
 			text-decoration: none;
-			color: $gull-gray;
+			color: $gray-gull;
 
 			&:hover {
-				color: $spring-green;
+				color: $green-spring;
 			}
 		}
 
 		&.active {
-			border-left: 3px solid $spring-green;
+			border-left: 3px solid $green-spring;
 
 			a {
-				color: $spring-green;
+				color: $green-spring;
 			}
 		}
 	}
@@ -234,11 +241,11 @@ section {
 
 // Buttons
 .button {
-	background-color: $alabaster-gray;
+	background-color: $gray-alabaster;
 	border-radius: 3px;
 	border: 0px;
-	border: 1px solid $gallery-gray;
-	color: $oxford-blue;
+	border: 1px solid $gray-gallery;
+	color: $blue-oxford;
 	cursor: pointer;
 	font-size: 16px;
 	font-weight: 700;
@@ -250,11 +257,11 @@ section {
 	width: 100%;
 
 	&:hover {
-		background-color: $gallery-gray;
+		background-color: $gray-gallery;
 	}
 
 	&--icon {
-		border: 1px solid $gallery-gray;
+		border: 1px solid $gray-gallery;
 		font-size: 12px;
 		text-align: left;
 		flex-wrap: wrap;
@@ -262,17 +269,17 @@ section {
 		display: flex;
 		align-items: center;
 		padding: 15px 20px;
-		color: $oxford-blue;
+		color: $blue-oxford;
 
 		i {
-			color: $spring-green;
+			color: $green-spring;
 			padding-right: 15px;
 			transition: all .15s ease-out;
 		}
 
 		&:hover {
-			background-color: $spring-green;
-			border: 1px solid $spring-green;
+			background-color: $green-spring;
+			border: 1px solid $green-spring;
 			color: $white;
 
 			i {
@@ -292,13 +299,13 @@ section {
 	}
 
 	&--green {
-		border: 1px solid $spring-green;
-		background-color: $spring-green;
+		border: 1px solid $green-spring;
+		background-color: $green-spring;
 		color: $white;
 
 		&:hover {
-			border-color: $spring-green-hover;
-			background-color: $spring-green-hover;
+			border-color: $green-jade;
+			background-color: $green-jade;
 		}
 	}
 
@@ -308,22 +315,28 @@ section {
 		color: $white;
 
 		&:hover {
-			border-color: $purple-hover;
-			background-color: $purple-hover;
+			border-color: $purple-indigo;
+			background-color: $purple-indigo;
 		}
 	}
 
 	&--red {
-		border: 1px solid $radical-red;
-		background-color: $radical-red;
+		border: 1px solid $red-radical;
+		background-color: $red-radical;
 		color: $white;
 
 		&:hover {
-			border-color: $radical-red-hover;
-			background-color: $radical-red-hover;
+			border-color: $red-monza;
+			background-color: $red-monza;
 		}
 	}
 }
+
+.button__text {
+	display: flex;
+	flex-direction: column;
+}
+
 
 
 // Color card
@@ -341,16 +354,28 @@ section {
 			background-color: $yellow-bright-sun;
 		}
 
-		&--spring-green {
-			background-color: $spring-green;
+		&--green-spring {
+			background-color: $green-spring;
+		}
+
+		&--green-jade {
+			background-color: $green-jade;
 		}
 
 		&--purple {
 			background-color: $purple;
 		}
 
-		&--radical-red {
-			background-color: $radical-red;
+		&--purple-indigo {
+			background-color: $purple-indigo;
+		}
+
+		&--red-radical {
+			background-color: $red-radical;
+		}
+
+		&--red-monza {
+			background-color: $red-monza;
 		}
 	}
 
@@ -363,7 +388,7 @@ section {
 }
 
 .card__box {
-	border: 1px solid $alto-gray;
+	border: 1px solid $gray-alto;
 	border-radius: 3px;
 	padding: 16px 24px;
 }
@@ -376,8 +401,8 @@ section {
 .form {
 	&__input {
 		border-radius: 3px;
-		background-color: $alabaster-gray;
-		border: 1px solid $alto-gray;
+		background-color: $gray-alabaster;
+		border: 1px solid $gray-alto;
 		box-shadow: none;
 		padding: 6px 12px;
 		font-size: 14px;
@@ -385,7 +410,7 @@ section {
 		width: 100%;
 
 		&--disabled {
-			background-color: $alto-gray;
+			background-color: $gray-alto;
 		}
 	}
 
@@ -409,10 +434,10 @@ section {
 
 
 // Code elements
-$code-gray: #F4F4F4;
+$gray-code: #F4F4F4;
 
 pre {
-	background: $code-gray;
+	background: $gray-code;
 	padding: 20px;
 	border-radius: 3px;
   display: block;
@@ -432,7 +457,7 @@ code {
 		position: absolute;
 		right: 0;
 		top: 0;
-		background-color: $oxford-blue;
+		background-color: $blue-oxford;
 		color: $white;
 		padding: 0 4px;
 		border-radius: 3px;

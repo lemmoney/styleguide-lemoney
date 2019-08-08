@@ -41,3 +41,6 @@ yarn.lock
 # Destination folder
 dist
 .cache
+
+# CodeKit config
+config.codekit3
