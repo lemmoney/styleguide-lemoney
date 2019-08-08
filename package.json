@@ -8,7 +8,7 @@
   "scripts": {
     "dev": "parcel src/index.pug",
     "build": "parcel build src/index.pug",
-    "server": "serve dist -l $PORT"
+    "start": "serve dist -l $PORT"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.3",
