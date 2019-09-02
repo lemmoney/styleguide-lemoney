@@ -23,6 +23,9 @@ $red-monza: #c20033;
 $yellow-bright-sun: #FFD53F;
 // blue
 $blue-oxford: #354052;
+// orange
+$orange: #FF7227;
+$orange-grenadier: #C54200;
 
 $white: #FFF;
 $black: #000;
@@ -330,6 +333,17 @@ section {
 			background-color: $red-monza;
 		}
 	}
+
+	&--orange {
+		border: 1px solid $orange;
+		background-color: $orange;
+		color: $white;
+
+		&:hover {
+			border-color: $orange-grenadier;
+			background-color: $orange-grenadier;
+		}
+	}
 }
 
 .button__text {
@@ -376,6 +390,14 @@ section {
 
 		&--red-monza {
 			background-color: $red-monza;
+		}
+
+		&--orange {
+			background-color: $orange;
+		}
+
+		&--orange-grenadier {
+			background-color: $orange-grenadier;
 		}
 	}
 

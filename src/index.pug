@@ -121,6 +121,13 @@ html(lang='en')
 								p Red Radical
 								p #FC235C
 								p RGB (252,35,92)
+						.col-md-2.color__card
+							.color__display.color__display--orange
+							.color__subtitle
+								p Orange
+								p #FF7227
+								p RGB (255, 114, 39)
+
 					h4 Secondary Colors
 					.row
 						.col-md-2.color__card
@@ -141,6 +148,13 @@ html(lang='en')
 								p Red Monza
 								p #C20033
 								p RGB (194,0,51)
+						.col-md-2.color__card
+							.color__display.color__display--orange-grenadier
+							.color__subtitle
+								p Orange Grenadier
+								p #C54200
+								p RGB (197, 66, 0)
+
 					p Colors&nbsp;
 						a(href="https://material.io/resources/color/#!/?view.left=0&view.right=0", target="_blank") material.io
 
@@ -430,6 +444,33 @@ html(lang='en')
 									| .button--purple:hover {
 									| 	border-color: #630076;
 									| 	background-color: #630076;
+									| }
+								.code__title css
+					.row
+						.col-12
+							h4 Orange Button
+						.col-md-2
+							button.button.button--orange Button
+						.offset-md-2
+						.col-md-6
+							.code__box
+								pre
+									code(class="language-html", data-language="html")
+										- var button_string_html = '<button class="button button--orange">button</button>';
+										| #{button_string_html}
+								.code__title html
+							.code__box
+								pre
+									code(class="language-css", data-language="css")
+									| .button--purple {
+									| 	border: 1px solid #FF7227;
+									| 	background-color: #FF7227;
+									| 	color: #FFF
+									| }
+									|
+									| .button--purple:hover {
+									| 	border-color: #C54200;
+									| 	background-color: #C54200;
 									| }
 								.code__title css
 					.row
