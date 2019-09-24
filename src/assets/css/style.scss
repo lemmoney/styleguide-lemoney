@@ -242,6 +242,43 @@ section {
 	}
 }
 
+// Logo
+.logo__box {
+	text-align: center;
+	padding: 30px 10px;
+	border: 1px solid $gray-alto;
+	&--color {
+		background-color: $purple;
+	}
+}
+
+.logo__links {
+	padding: 0;
+	list-style: none;
+	text-align: left;
+	margin-bottom: 50px;
+	@include breakpoint("md") {
+		margin-bottom: 0px;
+	}
+
+	li {
+		margin: 25px 0px;
+
+		@include breakpoint("md") {
+			margin: 10px 0px;
+		}
+	}
+
+	.fas {
+		padding-right: 5px;
+	}
+
+	.file__title {
+		padding-right: 5px;
+	}
+
+}
+
 // Buttons
 .button {
 	background-color: $gray-alabaster;
